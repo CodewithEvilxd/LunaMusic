@@ -10,7 +10,7 @@ function Home() {
 	return (
 		<div className="pt-20 pb-24 max-w-6xl mx-2 lg:mx-auto">
 			<GithubInfo />
-			<Link to='https://basiclunamusic.vercel.app/'>
+			<Link to='https://basic-luna-music-xd.vercel.app/'>
 				<div className="flex gap-3 w-auto lg:w-full justify-center items-center text-3xl bg-black bg-opacity-50 backdrop-blur-lg p-4 rounded-xl mb-4 hover:scale-105 transition-all">
 					<span>Basic Luna music</span>
 					<FaArrowRight/>
