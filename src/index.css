@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.87);
+	background-image: var(--bodyBg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	height: 8px;
+	width: 0px;
+}
+
+@media (min-width: 500px) {
+    ::-webkit-scrollbar {
+		height: 8px;
+		width: 6px;
+	}
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #7d56c1ce;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #7d56c1;
+}
+
+input[type="range"] {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	/* creating a custom design */
+	cursor: pointer;
+	outline: none;
+	/*  slider progress trick  */
+	overflow: hidden;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+	height: 3px;
+	border-radius: 16px;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+	height: 3px;
+	border-radius: 16px;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+	/* removing default appearance */
+	-webkit-appearance: none;
+	appearance: none;
+	/* creating a custom design */
+	height: 5px;
+	width: 5px;	
+	background-color: #9233EA;
+	border-radius: 50%;
+	border: 2px solid #9233EA;
+	/*  slider progress trick  */
+	box-shadow: -100vw 0 0 100vw #9233EA;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+	appearance: none;
+	height: 5px;
+	width: 5px;
+	background-color: #9233EA;
+	border-radius: 50%;
+	border: 2px solid #9233EA;
+	/*  slider progress trick  */
+	box-shadow: -100vw 0 0 100vw #9233EA;
+}
+
+#volume {
+	background-image: url('/src/assets/volume.png');
+	background-position: 5px 5px; 
+	background-repeat: no-repeat;
+
+}
+#volume::-webkit-slider-thumb {
+	background-color: #ffffff88;
+	border: 1px solid #ffffff88;
+	box-shadow: -407px 0 0 400px #ffffff88;
+}
+
+#volume::-moz-range-thumb {
+	background-color: #ffffff88;
+	border: 1px solid #ffffff88;
+	box-shadow: -407px 0 0 400px #ffffff88;
+}
+
+#volume::-webkit-slider-thumb {
+	background-color: #ffffff88;
+	border: 2px solid #ffffff88;
+	box-shadow: -100vw 0 0 100vw #ffffff88;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+	background-color: #ffffff88;
+	border: 1px solid #ffffff88;
+	box-shadow: -407px 0 0 400px #ffffff88;
+}
